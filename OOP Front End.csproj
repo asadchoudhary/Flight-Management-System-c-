@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE9432FB-2A26-4664-96C3-96ACB4C3E95F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OOP_Front_End</RootNamespace>
+    <AssemblyName>OOP Front End</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_Resp_Front_End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Resp_Front_End.Designer.cs">
+      <DependentUpon>Admin_Resp_Front_End.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Airport_Front_End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Airport_Front_End.Designer.cs">
+      <DependentUpon>Airport_Front_End.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CA_Front_End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CA_Front_End.Designer.cs">
+      <DependentUpon>CA_Front_End.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Front_end.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Front_end.Designer.cs">
+      <DependentUpon>Customer_Front_end.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flight_schdule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flight_schdule.Designer.cs">
+      <DependentUpon>flight_schdule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pilot_front.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pilot_front.Designer.cs">
+      <DependentUpon>pilot_front.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plane_Front_end.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plane_Front_end.Designer.cs">
+      <DependentUpon>Plane_Front_end.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Logins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins.Designer.cs">
+      <DependentUpon>Logins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries_Front_End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Queries_Front_End.Designer.cs">
+      <DependentUpon>Queries_Front_End.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRes.Designer.cs">
+      <DependentUpon>AdminRes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resecpnist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resecpnist.Designer.cs">
+      <DependentUpon>Resecpnist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\model\Admin.cs" />
+    <Compile Include="Resources\model\Airport.cs" />
+    <Compile Include="Resources\model\Cabin_Attendent.cs" />
+    <Compile Include="Resources\model\Flight Schedule.cs" />
+    <Compile Include="Resources\model\Passenger.cs" />
+    <Compile Include="Resources\model\Person.cs" />
+    <Compile Include="Resources\model\Pilot.cs" />
+    <Compile Include="Resources\model\Inqueries.cs" />
+    <Compile Include="Resources\model\Plane.cs" />
+    <Compile Include="Resources\model\Receptionist.cs" />
+    <Compile Include="Resources\model\Report.cs" />
+    <Compile Include="Resources\model\Route.cs" />
+    <Compile Include="Resources\model\Ticket.cs" />
+    <Compile Include="Route_Front_End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Route_Front_End.Designer.cs">
+      <DependentUpon>Route_Front_End.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket_Front_End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket_Front_End.Designer.cs">
+      <DependentUpon>Ticket_Front_End.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Resp_Front_End.resx">
+      <DependentUpon>Admin_Resp_Front_End.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Airport_Front_End.resx">
+      <DependentUpon>Airport_Front_End.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CA_Front_End.resx">
+      <DependentUpon>CA_Front_End.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Front_end.resx">
+      <DependentUpon>Customer_Front_end.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flight_schdule.resx">
+      <DependentUpon>flight_schdule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins.resx">
+      <DependentUpon>Logins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pilot_front.resx">
+      <DependentUpon>pilot_front.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plane_Front_end.resx">
+      <DependentUpon>Plane_Front_end.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries_Front_End.resx">
+      <DependentUpon>Queries_Front_End.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRes.resx">
+      <DependentUpon>AdminRes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resecpnist.resx">
+      <DependentUpon>Resecpnist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Route_Front_End.resx">
+      <DependentUpon>Route_Front_End.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket_Front_End.resx">
+      <DependentUpon>Ticket_Front_End.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picres.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picres1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-check-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
